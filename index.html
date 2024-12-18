@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Participation Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">2024 Event Participation Form</h1>
+        <p id="description">
+          This information will help us organize the event more effectively.
+          Kindly complete the form in full."
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="" id="name-label">Your Full Name:</label>
+          <input
+            class="form-control"
+            type="text"
+            name=""
+            id="name"
+            placeholder="Please enter your full name."
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="" id="email-label">Your Email Address:</label>
+          <input
+            class="form-control"
+            type="email"
+            name=""
+            id="email"
+            placeholder="Provide a valid email address so we can contact you if needed."
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="" id="number-label">Age:</label>
+          <input
+            class="form-control"
+            type="number"
+            id="number"
+            placeholder="Share your phone number for contact purposes, if necessary.
+                "
+            min="18"
+            max="65"
+          />
+        </div>
+        <div class="form-group">
+          <p>Your Availability for Event Dates:</p>
+          <label for="">
+            <input
+              class="input-radio"
+              type="radio"
+              name="user-date"
+              value="January-15-2024"
+            />January 15, 2024</label
+          >
+          <label for="">
+            <input
+              class="input-radio"
+              type="radio"
+              name="user-date"
+              value="January-16-2024"
+            />January 16, 2024</label
+          >
+          <label for="">
+            <input
+              class="input-radio"
+              type="radio"
+              name="user-date"
+              value="January-17-2024"
+            />January 17, 2024</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Will You Be Attending the Event?</p>
+          <select name="" id="dropdown" class="form-control self">
+            <option value="">Select an option.</option>
+            <option value="">Yes, I will attend.</option>
+            <option value="">No, I cannot attend.</option>
+            <option value="">I am unsure at the moment.</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Which Sessions Do You Plan to Attend?</p>
+          <label for="">
+            <input
+              type="checkbox"
+              value="Opening-Speech"
+              class="input-checkbox"
+            />Opening Speech</label
+          >
+          <label for="">
+            <input
+              type="checkbox"
+              value="Workshops"
+              class="input-checkbox"
+            />Workshops</label
+          >
+          <label for="">
+            <input
+              type="checkbox"
+              value="Closing
+            -Panel"
+              class="input-checkbox"
+            />Closing Panel</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Do You Have Any Dietary Restrictions?</p>
+          <textarea name="" id="" class="input-textarea">
+Please specify (e.g., vegan, vegetarian, gluten intolerance). If none, type 'None'.</textarea
+          >
+        </div>
+        <div class="form-group">
+          <button type="Submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
